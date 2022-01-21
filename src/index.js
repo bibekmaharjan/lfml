@@ -1,7 +1,10 @@
+import axios from 'axios';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+
+axios.defaults.baseURL = "https://api.themoviedb.org"
 
 ReactDOM.render(
   <React.StrictMode>

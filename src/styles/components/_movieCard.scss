@@ -3,8 +3,16 @@
     background-color: #33363D;
     display: flex;
     padding: 5px;
-    width: 60rem;
+    width: 100%;
     text-align: left;
+    border-radius: 4px;
+    transition: all .3s ease-in;
+    margin-bottom: 2rem;
+
+    &:hover {
+        box-shadow: 0px 3px 6px rgba($color: #000000, $alpha: .16);
+        transform: translateY(-2px);
+    }
 
     &__image {
         height: 16rem;
