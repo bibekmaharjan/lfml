@@ -1,0 +1,14 @@
+.movieCard {
+    height: max-content;
+    background-color: #33363D;
+    display: flex;
+    padding: 5px;
+    width: 60rem;
+    text-align: left;
+
+    &__image {
+        height: 16rem;
+        object-fit: contain;
+        margin-right: 1rem;
+    }
+}

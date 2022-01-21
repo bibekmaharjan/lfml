@@ -1,0 +1,38 @@
+.text {
+
+    &-main {
+        font-weight: 500;
+        color: #fff;
+        font-size: 2.6rem;
+    }
+
+    &-reg {
+        font-weight: 300;
+        color: #fff;
+        font-size: 2.3rem;
+    }
+
+    &-med {
+        font-weight: 300;
+        color: #fff;
+        font-size: 2rem;
+    }
+
+    &-med--mute {
+        font-weight: 400;
+        color: #636467;
+        font-size: 1.5rem;
+    }
+
+    &-sm {
+        font-weight: 300;
+        color: #fff;
+        font-size: 1.4rem;
+    }
+
+    &-sm--mute {
+        font-weight: 400;
+        color: #636467;
+        font-size: 1.4rem;
+    }
+}
