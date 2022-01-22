@@ -1,7 +1,8 @@
 .movieCard {
     height: max-content;
     background-color: #33363D;
-    display: flex;
+    display: grid;
+    grid-template-columns: 14.5rem 1fr;
     padding: 5px;
     width: 100%;
     text-align: left;
@@ -11,12 +12,61 @@
 
     &:hover {
         box-shadow: 0px 3px 6px rgba($color: #000000, $alpha: .16);
-        transform: translateY(-2px);
+    }
+
+    &-imgLink {
+      
+        
+        &,
+        &:link,
+        &:visited {
+            overflow: hidden;
+            height: 18rem;
+            width: 13rem;
+            margin-right: 1rem;
+            position: relative;
+            transition: all .2s ease-in;
+        }
+
+        &:active,
+        &:focus {
+            outline: none;
+        }
+        &:hover .movieCard__caption {
+            opacity: 1;
+            top: 50%;
+        }
+
+        &:hover .movieCard__image {
+            filter: blur(8px);
+            -webkit-filter: blur(8px);
+        }
     }
 
     &__image {
-        height: 16rem;
-        object-fit: contain;
-        margin-right: 1rem;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        transition: all .2s ease-in-out;
+        object-position: center;
+
+        &:hover {
+            transform: scale(1.03);
+        }
+
+       
+    }
+
+    &__caption {
+        font-weight: 400;
+        color: #fff;
+        font-size: 1.8rem;
+        opacity: 0;
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: all .3s ease-in-out;
+        
     }
 }

@@ -2,37 +2,60 @@
 
     &-main {
         font-weight: 500;
-        color: #fff;
+        color: $color-white;
         font-size: 2.6rem;
     }
 
     &-reg {
         font-weight: 300;
-        color: #fff;
+        color: $color-white;
         font-size: 2.3rem;
     }
 
     &-med {
         font-weight: 300;
-        color: #fff;
+        color: $color-white;
         font-size: 2rem;
     }
 
     &-med--mute {
         font-weight: 400;
-        color: #636467;
+        color: $color-gray;
         font-size: 1.5rem;
     }
 
     &-sm {
         font-weight: 300;
-        color: #fff;
+        color: $color-white;
         font-size: 1.4rem;
     }
 
     &-sm--mute {
         font-weight: 400;
-        color: #636467;
+        color: $color-gray;
         font-size: 1.4rem;
     }
+}
+
+.movieCard {
+
+    &-link {
+        &,
+        &:link,
+        &:visited {
+            text-decoration: none;
+            transition: all .2s ease-in;
+        }
+
+        &:active,
+        &:focus {
+            outline: none;
+        }
+
+        &:hover {
+            color: $color-primary-light;
+        }
+    }
+
+  
 }

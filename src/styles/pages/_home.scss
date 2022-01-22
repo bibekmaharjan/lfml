@@ -1,9 +1,13 @@
 .home {
-    padding-top: 5rem;
+    padding-top: 3rem;
     grid-column: full-start / full-end;
 
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 3rem;
     row-gap: 2rem;
+
+    @include respond(tab-port) {
+        grid-template-columns: 1fr;
+    }
 }

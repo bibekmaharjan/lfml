@@ -1,0 +1,17 @@
+.header {
+    grid-column: full-start / full-end;
+
+    display: flex;
+    justify-content: center;
+    // position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 3rem 0;
+    z-index: 99;
+    &__logo {
+        height: 3rem;
+        object-fit: contain;
+        cursor: pointer;
+    }
+}

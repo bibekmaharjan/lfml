@@ -9,6 +9,9 @@ function MovieList({title, apiLink, genreLink, listGenre}) {
     const [genreData, setGenreData] = useState([]);
 
     useEffect(() => {
+
+        //////////FOR MOVIE DATA
+        
         axios.get(`${apiLink}${process.env.REACT_APP_MOVIE_API_KEY}`)
             .then((res) => {
                 setMoviesData(res.data.results)
@@ -17,6 +20,8 @@ function MovieList({title, apiLink, genreLink, listGenre}) {
                 console.log(e)
             })
         
+        //////////FOR GENRE DATA
+
         axios.get(`${genreLink}${process.env.REACT_APP_MOVIE_API_KEY}`)
             .then((res) => {
                 setGenreData(res.data.genres)
@@ -25,11 +30,6 @@ function MovieList({title, apiLink, genreLink, listGenre}) {
                 console.log(e)
             })
     },[])
-
-    useEffect(() => {
-        console.log(moviesData)
-        console.log(genreData)
-    }, [moviesData, genreData])
 
   return (
       <>
